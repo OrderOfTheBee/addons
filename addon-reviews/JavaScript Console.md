@@ -4,6 +4,7 @@
     <tr>
         <td width="120">Developer:</td>
         <td>Florian Maul, Jens Goldhammer + contributors</td>
+        <td colspan="2"></td>
     </tr>
     <tr>
         <td width="120">Release:</td>
@@ -63,7 +64,7 @@ Compatibility | 2 | Alfresco | must not | Module itself does not use EoL'ed feat
 
 ## Suggested tasks
 
-1. Update addons.alfresco.com listing - potentially de-activate (https://code.google.com/p/share-extras/wiki/JavascriptConsole)[old project site]
+1. Update addons.alfresco.com listing - potentially de-activate [old project site](https://code.google.com/p/share-extras/wiki/JavascriptConsole)
 2. Correct license application within project
 3. Minor re-organisation of configuration
 4. Remove reference to EoL'ed components
