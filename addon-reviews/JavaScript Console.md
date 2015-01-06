@@ -43,23 +43,23 @@
 
 ## General notes
 
-| No | Note | Reference |
-| -- | ---- | --------- |
-|  1 | Apache License is not applied correctly - license is only stated in the addons.alfresco.com listing and included in only a single source file | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) |
+No | Note | Reference
+--: | ---- | ---------
+ 1 | Apache License is not applied correctly - license is only stated in the addons.alfresco.com listing and included in only a single source file | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Criteria notes
 
 This segment lists all notes / issues / violations of inclusion criteria found during the review. Any item of the [criteria catalog](https://github.com/OrderOfTheBee/addons/wiki/Inclusion-criteria-overview) not mentioned in this section is presumed to be matched sufficiently for inclusion in the OOTB addon listing.
 
-| Class | No | Category | [Type](https://github.com/OrderOfTheBee/addons/wiki/General-guidelines#requirement-relevance-types) | Note | 
-| ----- | -- | -------- | ----- | ---- |
-| Non-technical | 5 | [State](https://github.com/OrderOfTheBee/addons/wiki/Non-technical-inclusion-criteria#state) | must | Current release has been marked as a "Release Candidate" for 15+ months - effectively a public "production" |
-| Non-technical | 8 | [Publication](https://github.com/OrderOfTheBee/addons/wiki/Non-technical-inclusion-criteria#public-listing) | must | Details on addons.alfresco.com listing very limited and outdated (minimal supported versions, project link) |
-| Technical | 13 | Configuration | must | Repository module should use "module" instead of "extension" path for Spring context and model configuration |
-| Technical | 32 | Configuration | should | Repository module should not use "extension" path for web scripts (which prevents overrides by end user / customer) |
-| Technical | 17 | Configuration | should | Repository moudule might want to allow configuration of pre-/post-roll scripts via Addon properties (or inline into Java source) |
-| Technical | 21 | API | should | Repository module uses non-public bean variant for TransactionService (non-critical due to simple alias of TransactionService=transactionService) |
-| Compatibility | 2 | Alfresco | must not | Module itself does not use EoL'ed features, but provides console templates to use Lucene |
+Class | No | Category | [Type](https://github.com/OrderOfTheBee/addons/wiki/General-guidelines#requirement-relevance-types) | Note | 
+----- | --: | -------- | :----- | ----
+Non-technical | 5 | [State](https://github.com/OrderOfTheBee/addons/wiki/Non-technical-inclusion-criteria#state) | must | Current release has been marked as a "Release Candidate" for 15+ months - effectively a public "production"
+Non-technical | 8 | [Publication](https://github.com/OrderOfTheBee/addons/wiki/Non-technical-inclusion-criteria#public-listing) | must | Details on addons.alfresco.com listing very limited and outdated (minimal supported versions, project link)
+Technical | 13 | Configuration | must | Repository module should use "module" instead of "extension" path for Spring context and model configuration
+Technical | 32 | Configuration | should | Repository module should not use "extension" path for web scripts (which prevents overrides by end user / customer)
+Technical | 17 | Configuration | should | Repository moudule might want to allow configuration of pre-/post-roll scripts via Addon properties (or inline into Java source)
+Technical | 21 | API | should | Repository module uses non-public bean variant for TransactionService (non-critical due to simple alias of TransactionService=transactionService)
+Compatibility | 2 | Alfresco | must not | Module itself does not use EoL'ed features, but provides console templates to use Lucene
 
 ## Suggested tasks
 
