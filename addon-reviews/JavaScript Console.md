@@ -8,13 +8,13 @@
     </tr>
     <tr>
         <td width="120">Release:</td>
-        <td><a href="https://github.com/share-extras/js-console/releases/tag/v0.6.0-rc1">0.6.1-rc1</a></td>
+        <td><a href="https://github.com/share-extras/js-console/releases/tag/v0.6.0-rc1">0.6.0-rc1</a></td>
         <td width="120">Release date:</td>
         <td>2013-10-22</td>
     </tr>
     <tr>
         <td width="120">Type:</td>
-        <td>Repository / Share extension</td>
+        <td>Extension for Repository / Share</td>
         <td width="120">Packaging:</td>
         <td>AMP</td>
     </tr>
@@ -77,6 +77,8 @@ Alfresco | Community / Enterprise 4.0 | | API and configuration compatible (docu
 Firefox | 34.0.5 | tested by reviewer
 Internet Explorer | 10 | tested by reviewer
 Internet Explorer | 11 | tested by reviewer (Alfresco Enterprise 4.2.1 / Community 5 or later)
+
+Note: IE 8 is not compatible / supported in any combination with Alfresco, unless [issue#24](https://github.com/share-extras/js-console/issues/24) is addressed.
 
 ## Suggested tasks
 

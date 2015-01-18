@@ -1,0 +1,28 @@
+{
+    "reviewedAddons" : [
+        {
+            "name" : "JavaScript Console",
+            "type" : "Extension for Repository / Share",
+            "description": "The JavaScript Console provides administrators the ability to execute JavaScript scripts within the Repository from an easy to use, Share-based editor with syntax highlighting and code completion. Furthermore it includes the capability to compose and render Freemarker templates on the Repository from the same user interface.",
+            "license": "Apache License",
+            "listing" : "https://addons.alfresco.com/addons/javascript-console",
+            "homepage" : "https://github.com/share-extras/js-console",
+            "sourceRepository" : "https://github.com/share-extras/js-console",
+            "reviewer" : [{
+                "name" : "Axel",
+                "surname" : "Faust",
+                "nick" : "AFaust"
+            }],
+            "reviewDate" : "2015-01-06",
+            "releaseVersion": "0.6.0-rc1",
+            "releaseDownload": "https://github.com/share-extras/js-console/releases/tag/v0.6.0-rc1",
+            "reviewReport" : "https://github.com/OrderOfTheBee/addons/blob/master/addon-reviews/JavaScript%20Console.md",
+            "screenshots" : [
+                "https://github.com/OrderOfTheBee/addons/blob/master/addon-web/images/js-console-js-editor.png",
+                "https://github.com/OrderOfTheBee/addons/blob/master/addon-web/images/js-console-ftl-editor.png"
+            ]
+        }
+    ],
+    "pendingReviews" : [ ],
+    "pendingReEvaluations" : [ ]
+}
