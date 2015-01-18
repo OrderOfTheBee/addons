@@ -56,11 +56,27 @@ Class | No | Category | [Type](https://github.com/OrderOfTheBee/addons/wiki/Gene
 ----- | --: | -------- | :----- | ----
 Non-technical | 5 | [State](https://github.com/OrderOfTheBee/addons/wiki/Non-technical-inclusion-criteria#state) | must | Current release has been marked as a "Release Candidate" for 15+ months - effectively a public "production"
 Non-technical | 8 | [Publication](https://github.com/OrderOfTheBee/addons/wiki/Non-technical-inclusion-criteria#public-listing) | must | Details on addons.alfresco.com listing very limited and outdated (minimal supported versions, project link)
+Technical | 11 | Build | must | Build from source of tag 0.6.0-rc1 succeeds (criteria fulfilled), but current master fails due to [issue#30](https://github.com/share-extras/js-console/issues/30) |
 Technical | 13 | Configuration | must | Repository module should use "module" instead of "extension" path for Spring context and model configuration
 Technical | 32 | Configuration | should | Repository module should not use "extension" path for web scripts (which prevents overrides by end user / customer)
 Technical | 17 | Configuration | should | Repository moudule might want to allow configuration of pre-/post-roll scripts via Addon properties (or inline into Java source)
 Technical | 21 | API | should | Repository module uses non-public bean variant for TransactionService (non-critical due to simple alias of TransactionService=transactionService)
 Compatibility | 2 | Alfresco | must not | Module itself does not use EoL'ed features, but provides console templates to use Lucene
+
+## Compatibility
+
+This segments lists all notes regarding compatibility of the addon with Alfresco, 3rd-party addons or client environments.
+
+Compatible with | Version | Notes
+--- | --- | ---
+Alfresco | Enterprise 5.0.0 | tested by reviewer
+Alfresco | Community 5.0.c | tested by douglascrp (discussed via #alfresco on IRC)
+Alfresco | Enterprise 4.2.x | tested by reviewer
+Alfresco | Community 4.2.f | tested by reviewer
+Alfresco | Community / Enterprise 4.0 | | API and configuration compatible (document list actions)
+Firefox | 34.0.5 | tested by reviewer
+Internet Explorer | 10 | tested by reviewer
+Internet Explorer | 11 | tested by reviewer (Alfresco Enterprise 4.2.1 / Community 5 or later)
 
 ## Suggested tasks
 
@@ -68,3 +84,4 @@ Compatibility | 2 | Alfresco | must not | Module itself does not use EoL'ed feat
 2. Correct license application within project
 3. Minor re-organisation of configuration
 4. Remove reference to EoL'ed components
+5. Remove reliance on running SOLR - [issue#21](https://github.com/share-extras/js-console/issues/21)
