@@ -40,7 +40,7 @@
     </tr>
 </table>
 
-<p><span style="font-size:150%;">Review result:</span><span style="color:green;font-size:150%;">PASS</span> (only trivial issues)</p>
+<p><span style="font-size:150%;">Review result: </span><span class="label labelstyle-159818 linked-labelstyle-159818 lightertooltipped" style="background-color: #159818; color: #fff;">PASS</span> (only trivial issues)</p>
 
 ## General notes
 
@@ -59,7 +59,7 @@ Non-technical | 8 | [Publication](https://github.com/OrderOfTheBee/addons/wiki/N
 Technical | 11 | Build | must | Build from source of tag 0.6.0-rc1 succeeds (criteria fulfilled), but current master fails due to [issue#30](https://github.com/share-extras/js-console/issues/30) |
 Technical | 13 | Configuration | must | Repository module should use "module" instead of "extension" path for Spring context and model configuration
 Technical | 32 | Configuration | should | Repository module should not use "extension" path for web scripts (which prevents overrides by end user / customer)
-Technical | 17 | Configuration | should | Repository moudule might want to allow configuration of pre-/post-roll scripts via Addon properties (or inline into Java source)
+Technical | 17 | Configuration | should | Repository module might want to allow configuration of pre-/post-roll scripts via Addon properties (or inline into Java source)
 Technical | 21 | API | should | Repository module uses non-public bean variant for TransactionService (non-critical due to simple alias of TransactionService=transactionService)
 Compatibility | 2 | Alfresco | must not | Module itself does not use EoL'ed features, but provides console templates to use Lucene
 
