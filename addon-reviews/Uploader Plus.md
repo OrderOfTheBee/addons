@@ -73,9 +73,9 @@ Internet Explorer | 11 | tested by reviewer (Alfresco Enterprise 4.2.1 / Communi
 ## Suggested tasks
 
 1. Convert Share uploader overrides to distinct custom uploaders (e.g. "SoftwareLoop.DNDUpload").
-1.1. Extend from Alfresco uploaders instead of hitching them
-1.2. Use extension module to add custom uploader components to document library via sub-component or customization mechanism (advantage of customization mechanism: less duplication and i18n reuse - sub-component has better isolation from Alfresco changes though)
-1.3. Use a customization or sub-component in extension module to set custom uploaders via setOptions()-operation on Alfresco.getFileUploadInstance() singleton
+    1. Extend from Alfresco uploaders instead of hitching them
+    2. Use extension module to add custom uploader components to document library via sub-component or customization mechanism (advantage of customization mechanism: less duplication and i18n reuse - sub-component has better isolation from Alfresco changes though)
+    3. Use a customization or sub-component in extension module to set custom uploaders via setOptions()-operation on Alfresco.getFileUploadInstance() singleton
 2. Use an upload backend web script distinct from the Alfresco one and call this from custom Share uploader
 3. Allow for selective (de-)activation of Uploader Plus during runtime (modules management) or on a per-site basis by Site Manager
 4. Move all custom web scripts from "(web-)extension" into regular folders, so end users / customers are able to override
