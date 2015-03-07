@@ -46,7 +46,7 @@
 
 No | Note | Reference
 --: | ---- | ---------
- 1 | Available on Maven Central as of version 1.2 | [uploader-plus on search.maven.org](http://search.maven.org/#search|ga|1|uploader-plus)
+ 1 | Available on Maven Central as of version 1.2 | [uploader-plus on search.maven.org](http://search.maven.org#search|ga|1|uploader-plus)
  2 | Good coverage of documentation via blog posts - Introduction, Installation, Configuration and even working with custom types and compatibility tests |
  3 | Custom code is (apart from "(web-)extension" overrides) contained in custom packages but lacks identifiable namespacing in some cases, specifically in web script package and client resource paths. Namespacing is not yet part of criteria catalog but may be added in the future. |  
 
