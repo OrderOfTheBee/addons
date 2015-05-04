@@ -40,7 +40,7 @@
     </tr>
 </table>
 
-<p><span style="font-size:150%;">Review result: </span><span class="label labelstyle-159818 linked-labelstyle-159818 lightertooltipped" style="background-color: #159818; color: #fff;">RESULT PENDING</span> (single significant issue)</p>
+<p><span style="font-size:150%;">Review result: </span><span class="label labelstyle-159818 linked-labelstyle-159818 lightertooltipped" style="background-color: #159818; color: #fff;">PASS</span> (changes for better compatibility advised)</p>
 
 ## General notes
 
@@ -81,3 +81,5 @@ Internet Explorer | 11 | tested by reviewer (Alfresco Enterprise 4.2.1 / Communi
 4. Move all custom web scripts from "(web-)extension" into regular folders, so end users / customers are able to override
 5. Provide custom web client configuration in file that does not conflict with default name web-client-config-custom.xml (custom file may be loaded via a custom ConfigBootstrap bean)
 6. Move all module specific Repository-tier configuration and model files into a path based on module, e.g. alfresco/module/uploader-plus-repo/
+
+A [pull request](https://github.com/softwareloop/uploader-plus/pull/75) involving these suggestions has been created. 
