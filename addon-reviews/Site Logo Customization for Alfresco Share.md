@@ -35,7 +35,6 @@
         <td>2016-09-12</td>
     </tr>
     <tr>
-        **TODO**
         <td>Criteria catalog:</td>
         <td colspan="3"><a href="https://github.com/OrderOfTheBee/addons/wiki/Inclusion-criteria-overview">Criteria overview</a> (state of 2015-01-06)</td>
     </tr>
@@ -55,14 +54,11 @@ This segment lists all notes / issues / violations of inclusion criteria found d
 
 Class | No | Category | [Type](https://github.com/OrderOfTheBee/addons/wiki/General-guidelines#requirement-relevance-types) | Note | 
 ----- | --: | -------- | :----- | ----
-Non-technical | 5 | [State](https://github.com/OrderOfTheBee/addons/wiki/Non-technical-inclusion-criteria#state) | must | Current release has been marked as a "Release Candidate" for 15+ months - effectively a public "production"
 Non-technical | 8 | [Publication](https://github.com/OrderOfTheBee/addons/wiki/Non-technical-inclusion-criteria#public-listing) | must | Details on addons.alfresco.com listing very limited and outdated (minimal supported versions, project link)
-Technical | 11 | Build | must | Build from source of tag 0.6.0-rc1 succeeds (criteria fulfilled), but current master fails due to [issue#30](https://github.com/share-extras/js-console/issues/30) |
-Technical | 13 | Configuration | must | Repository module should use "module" instead of "extension" path for Spring context and model configuration
+Non-technical | 10 | [Documentation](https://github.com/OrderOfTheBee/addons/wiki/Non-technical-inclusion-criteria#documentation) | must | Insufficient documentation on general usage
 Technical | 32 | Configuration | should | Repository module should not use "extension" path for web scripts (which prevents overrides by end user / customer)
-Technical | 17 | Configuration | should | Repository module might want to allow configuration of pre-/post-roll scripts via Addon properties (or inline into Java source)
-Technical | 21 | API | should | Repository module uses non-public bean variant for TransactionService (non-critical due to simple alias of TransactionService=transactionService)
-Compatibility | 2 | Alfresco | must not | Module itself does not use EoL'ed features, but provides console templates to use Lucene
+Technical | 22 | API |  must | Repository extension	use runAs() instead of unsecured private service beans to execute code with elevated privileges or as substitute for other users (implemented as javascript and webscript runas configure as admin)
+Technical | 23 | API | must not | Extension	require existence of super user called "admin" (e.g. runAs(work, "admin"))
 
 ## Compatibility
 
@@ -70,21 +66,16 @@ This segments lists all notes regarding compatibility of the addon with Alfresco
 
 Compatible with | Version | Notes
 --- | --- | ---
-Alfresco | Enterprise 5.0.0 | tested by reviewer
-Alfresco | Community 5.0.c | tested by douglascrp (discussed via #alfresco on IRC)
-Alfresco | Enterprise 4.2.x | tested by reviewer
+Alfresco | Community 5.1.x | tested by reviewer
+Alfresco | Community 5.0.x | tested by reviewer
 Alfresco | Community 4.2.f | tested by reviewer
-Alfresco | Community / Enterprise 4.0 | | API and configuration compatible (document list actions)
-Firefox | 34.0.5 | tested by reviewer
+Firefox | 48 | tested by reviewer
+Chromium | 52.0.2743.116 | tested by reviewer
 Internet Explorer | 10 | tested by reviewer
-Internet Explorer | 11 | tested by reviewer (Alfresco Enterprise 4.2.1 / Community 5 or later)
-
-Note: IE 8 is not compatible / supported in any combination with Alfresco, unless [issue#24](https://github.com/share-extras/js-console/issues/24) is addressed.
+Internet Explorer | 11 | tested by reviewer
 
 ## Suggested tasks
 
-1. Update addons.alfresco.com listing - potentially de-activate [old project site](https://code.google.com/p/share-extras/wiki/JavascriptConsole)
+1. Update addons.alfresco.com listing to add most recent Alfresco versions
 2. Correct license application within project
 3. Minor re-organisation of configuration
-4. Remove reference to EoL'ed components
-5. Remove reliance on running SOLR - [issue#21](https://github.com/share-extras/js-console/issues/21)
