@@ -1,16 +1,16 @@
-# JavaScript Console
+# Site Logo Customization for Alfresco Share
 
 <table width="100%">
     <tr>
         <td width="120">Developer:</td>
-        <td>Florian Maul, Jens Goldhammer + contributors</td>
+        <td>Alex Yu-Kuang Lu, Douglas C. R. Paes and Bhagya Silva</td>
         <td colspan="2"></td>
     </tr>
     <tr>
         <td width="120">Release:</td>
-        <td><a href="https://github.com/share-extras/js-console/releases/tag/v0.6.0-rc1">0.6.0-rc1</a></td>
+        <td><a href="https://github.com/douglascrp/alfresco-share-site-logo-customization/releases/tag/3.0">3.0</a></td>
         <td width="120">Release date:</td>
-        <td>2013-10-22</td>
+        <td>2016-08-19</td>
     </tr>
     <tr>
         <td width="120">Type:</td>
@@ -20,23 +20,24 @@
     </tr>
     <tr>
         <td width="120">Public listing:</td>
-        <td colspan="3"><a href="https://addons.alfresco.com/addons/javascript-console">addons.alfresco.com/javascript-console</a></td>
+        <td colspan="3"><a href="https://addons.alfresco.com/addons/share-site-logo-customisation">addons.alfresco.com/addons/share-site-logo-customisation</a></td>
     </tr>
     <tr>
         <td width="120">Source hosting:</td>
-        <td><a href="https://github.com/share-extras/js-console">GitHub share-extras/js-console</a></td>
+        <td><a href="https://github.com/douglascrp/alfresco-share-site-logo-customization">GitHub douglascrp/alfresco-share-site-logo-customization</a></td>
         <td width="120">Source license:</td>
-        <td>Apache License</td>
+        <td>Apache License 2.0</td>
     </tr>
     <tr>
         <td width="120">Reviewer:</td>
-        <td>Axel Faust</td>
+        <td>Douglas C. R. Paes</td>
         <td width="120">Review date:</td>
-        <td>2015-01-06</td>
+        <td>2016-09-12</td>
     </tr>
     <tr>
+        **TODO**
         <td>Criteria catalog:</td>
-        <td colspan="3"><a href="https://github.com/OrderOfTheBee/addons/wiki/Inclusion-criteria-overview">Critieria overview</a> (state of 2015-01-06)</td>
+        <td colspan="3"><a href="https://github.com/OrderOfTheBee/addons/wiki/Inclusion-criteria-overview">Criteria overview</a> (state of 2015-01-06)</td>
     </tr>
 </table>
 
@@ -46,7 +47,7 @@
 
 No | Note | Reference
 --: | ---- | ---------
- 1 | Apache License is not applied correctly - license is only stated in the addons.alfresco.com listing and included in only a single source file | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+ 1 | Apache License is not applied correctly | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Criteria notes
 
